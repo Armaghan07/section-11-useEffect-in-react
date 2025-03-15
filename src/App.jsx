@@ -86,38 +86,14 @@ function App() {
       </Modal>
 
       <header>
-  <img src={logoImg} alt="Stylized globe" className="logo" />
-  <h1 className="title">PlacePicker</h1>
-  <p className="description">
-    Create your personal collection of places you would like to visit or
-    you have visited.
-  </p>
-</header>
-
-<main>
-  <Places
-    title="I'd like to visit ..."
-    fallbackText={"Select the places you would like to visit below."}
-    places={pickedPlaces}
-    onSelectPlace={handleStartRemovePlace}
-  />
-  <Places
-    title="Available Places"
-    fallbackText="Sorting places by distance.."
-    places={availablePlaces}
-    onSelectPlace={handleSelectPlace}
-  />
-</main>
-
-
-      {/* <header>
-        <img src={logoImg} alt="Stylized globe" />
-        <h1>PlacePicker</h1>
-        <p>
+        <img src={logoImg} alt="Stylized globe" className="logo" />
+        <h1 className="title">PlacePicker</h1>
+        <p className="description">
           Create your personal collection of places you would like to visit or
           you have visited.
         </p>
       </header>
+
       <main>
         <Places
           title="I'd like to visit ..."
@@ -131,7 +107,7 @@ function App() {
           places={availablePlaces}
           onSelectPlace={handleSelectPlace}
         />
-      </main> */}
+      </main>
     </>
   );
 }
